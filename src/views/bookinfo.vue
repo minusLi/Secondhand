@@ -172,13 +172,13 @@ export default {
         data.path = response.data.photoPath;
         if (response.data.photonum == 1) {
           var temp = { url: "" };
-          let root = "http://124.70.58.159/";
+          let root = "/";
           temp.url = root + data.path + "1.jpg";
           data.imgList.push(temp);
         } else if (response.data.photonum == 2) {
           var temp = { url: "" };
           var temp1 = { url: "" };
-          let root = "http://124.70.58.159/";
+          let root = "/";
           temp.url = root + data.path + "1.jpg";
           data.imgList.push(temp);
           temp1.url = root + data.path + "2.jpg";
@@ -187,7 +187,7 @@ export default {
           var temp = { url: "" };
           var temp1 = { url: "" };
           var temp2 = { url: "" };
-          let root = "http://124.70.58.159/";
+          let root = "/";
           temp.url = root + data.path + "1.jpg";
           data.imgList.push(temp);
           temp1.url = root + data.path + "2.jpg";
