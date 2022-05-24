@@ -1,0 +1,22 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/test
+    username: root
+    password: second@2022
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+# 别名
+mybatis-plus:
+  type-aliases-package: cose.seu.secondhand.bean
+#图片位置
+photopath:
+  root: /usr/local/nginx/html/dist/
+  folder: secondhand/bookphoto/
+#管理员密码
+admin:
+  password: second@2022
